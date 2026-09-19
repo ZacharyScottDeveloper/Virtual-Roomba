@@ -3,6 +3,7 @@
 A Python simulation of an autonomous robot vacuum that explores and cleans 2D room layouts.
 
 **Demo:** [demo.mp4](demo.mp4)
+**House Layouts:** [View Here](https://billy-bit.zescott.com/python/virtual-roomba)
 
 ## Overview
 
