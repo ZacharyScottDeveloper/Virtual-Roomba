@@ -1,54 +1,51 @@
-# Virtual Roomba
+# 🤖 Virtual Roomba
 
-A Python simulation of an autonomous robot vacuum that explores and cleans a room while avoiding obstacles.
+A Python simulation of an autonomous robot vacuum that explores and cleans 2D room layouts.
 
-https://github.com/user-attachments/assets/YOUR-GIF
+**Demo:** [demo.mp4](demo.mp4)
 
-> Replace the link above with your uploaded GIF or use `![Demo](demo.gif)` if you add one to the repo.
+## Overview
 
-## About
-
-This project recreates the basic behaviour of a robotic vacuum. The Roomba moves around a 2D room, detects walls, avoids collisions, and gradually covers every reachable tile instead of following a predefined path.
-
-The simulation focuses on autonomous movement and coverage rather than perfect pathfinding.
+Virtual Roomba simulates the behaviour of a robotic vacuum using autonomous movement rather than a predefined route. The robot navigates around walls, avoids obstacles, and attempts to clean every reachable tile within a room.
 
 ## Features
 
-- Autonomous room exploration
-- Obstacle and wall avoidance
-- Full room coverage algorithm
-- Real-time visual simulation
-- Configurable room layouts
+- Autonomous exploration
+- Wall and obstacle avoidance
+- Complete room coverage
+- Multiple room layouts
+- Visual Python simulation
 
-## Files
+## Project Structure
 
-```text
 .
-├── house-layouts/     # Room layout presets
-├── demo.mp4           # Demonstration video
-├── index.html         # Browser interface
-├── roomba.py          # Simulation logic
-└── styles.css         # Interface styling
-```
+├── house-layouts/      # Room layout files
+├── roomba.py           # Main simulation
+├── demo.mp4            # Demonstration
+└── README.md
 
 ## Running
 
-Open `index.html` in your browser, then select a room layout to start the simulation.
+1. Install Python 3.
+2. Run the simulation:
 
-## How it works
+```bash
+python roomba.py
+```
 
-The robot repeatedly performs four steps:
+3. Choose one of the layouts from the `house-layouts` folder when prompted (or as configured in the script).
 
-1. Scan nearby tiles
-2. Detect obstacles
-3. Choose the next movement
-4. Mark cleaned areas and continue
+## How It Works
 
-This produces realistic roaming behaviour similar to early robotic vacuum navigation.
+The robot continuously repeats four steps:
 
-## Future improvements
+1. Scan its surroundings
+2. Detect walls and obstacles
+3. Choose the next valid move
+4. Mark the tile as cleaned and continue
 
-- Smarter coverage heuristics
-- Adjustable robot speed
-- Battery and docking simulation
-- Cleaning statistics
+The result is a realistic room-coverage simulation inspired by the navigation behaviour of early robotic vacuum cleaners.
+
+## Author
+
+**Zachary Scott**
